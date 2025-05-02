@@ -3,7 +3,7 @@ import React from 'react'
 import Slider from '../components/Slider'
 //import Blogs from '../components/Blogs'
 import Posts from '../components/Posts'
-import Footer from '../components/Footer'
+
 import entertainment from '@/constants/entertainment'
 import money from '@/constants/money'
 import politics from '@/constants/politics'
@@ -289,7 +289,6 @@ const page = () => {
 </div>
 <div className='h-20 bg-white'></div>
 
-<Footer/>
 
     </div>
 
