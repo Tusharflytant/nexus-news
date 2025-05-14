@@ -1,5 +1,5 @@
 import React from 'react'
-
+import Outbrain from '@/components/ads/outbrain';
 
 import { Metadata } from "next";
 
@@ -18,6 +18,13 @@ const TermsAndConditions = () => {
             Please read these terms and conditions carefully before using Nexus News.
           </p>
         </header>
+
+         <aside className="max-w-7xl mt-30 mx-auto">
+        <div className="OUTBRAIN outbrain-desktop" data-widget-id="AR_2"></div>
+        <div className="OUTBRAIN outbrain-mobile" data-widget-id="CRMB_2"></div>
+      </aside>
+
+   
 
         {/* Main Content */}
         <main className="max-w-5xl mx-auto px-4 py-12 space-y-12">
@@ -87,7 +94,12 @@ const TermsAndConditions = () => {
         </main>
       </div>
 
-     
+      <aside className="max-w-7xl mt-30 mx-auto">
+        <div className="OUTBRAIN outbrain-desktop" data-widget-id="AR_1"></div>
+        <div className="OUTBRAIN outbrain-mobile" data-widget-id="CRMB_1"></div>
+      </aside>
+
+      <Outbrain />
     </>
   )
 }

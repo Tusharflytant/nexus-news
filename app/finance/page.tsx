@@ -1,18 +1,13 @@
-import React from 'react'
-import Finance from './Finance';
-
+import Navlist from '@/components/Navlist';
+import money from '@/constants/money';
 import { Metadata } from "next";
 
 export const metadata : Metadata = {
-    title: "Finance",
+    title: "FINANCE",
   };
 
-const finance = () => {
-  return (
-    <div>
-      <Finance/>
-    </div>
-  )
-}
+const Finance = () => {
+  return <Navlist pageTitle="FINANCE" posts={money} />;
+};
 
-export default finance
+export default Finance;

@@ -1,17 +1,13 @@
-import React from 'react'
-import { Metadata } from 'next';
-import Trading from './Trading';
+import Navlist from '@/components/Navlist';
+import entertainment from '@/constants/entertainment';
+import { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: 'Trading',
+export const metadata : Metadata = {
+    title: "TRADING",
+  };
+
+const Trading = () => {
+  return <Navlist pageTitle="TRADING" posts={entertainment} />;
 };
 
-const trading = () => {
-  return (
-    <div>
-      <Trading/>
-    </div>
-  )
-}
-
-export default trading
+export default Trading;

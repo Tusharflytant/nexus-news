@@ -1,17 +1,13 @@
-import React from 'react'
+import Navlist from '@/components/Navlist';
+import usNews from '@/constants/usnews';
 import { Metadata } from "next";
-import Stock from './Stock';
 
 export const metadata : Metadata = {
-    title: "Finance",
+    title: "STOCK",
   };
 
 const stock = () => {
-  return (
-    <div>
-      <Stock/>
-    </div>
-  )
-}
+  return <Navlist pageTitle="STOCK" posts={usNews} />;
+};
 
-export default stock
+export default stock;

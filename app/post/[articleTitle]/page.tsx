@@ -7,6 +7,7 @@ import CreationDate from "@/components/Date";
 import Breadcrumb from '@/components/Breadcrumb';
 import Newsletter from "@/components/Newsletter";
 import React from "react";
+import Outbrain from "@/components/ads/outbrain";
 
 
 const formatTitle = (title: string) => title.replace(/[^A-Za-z0-9]+/g, "-");
@@ -370,7 +371,12 @@ const PostPage = async ({
         </div>
       </div> */}
 
-      <div className="h-20 bg-white"></div>
+      <aside className="max-w-7xl mt-30 mx-auto">
+        <div className="OUTBRAIN outbrain-desktop" data-widget-id="AR_1"></div>
+        <div className="OUTBRAIN outbrain-mobile" data-widget-id="CRMB_1"></div>
+      </aside>
+
+      <Outbrain />
      
     </div>
   );

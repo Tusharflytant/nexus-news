@@ -5,7 +5,7 @@ import CreationDate from "@/components/Date";
 import { Metadata } from "next";
 
 
-
+import Outbrain from "@/components/ads/outbrain";
 
 
 // Format author name to URL-safe slug
@@ -106,7 +106,12 @@ const AuthorPage = async ({ params }: { params: Promise<{ authorName: string }> 
         </div>
       </div>
 
-      <div className="h-20 bg-white"></div>
+       <aside className="max-w-7xl mt-30 mx-auto">
+        <div className="OUTBRAIN outbrain-desktop" data-widget-id="AR_1"></div>
+        <div className="OUTBRAIN outbrain-mobile" data-widget-id="CRMB_1"></div>
+      </aside>
+
+      <Outbrain />
       
     </>
   );

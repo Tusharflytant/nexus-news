@@ -1,18 +1,14 @@
-import React from 'react'
-import Etfs from './Etfs'
 
+import Navlist from '@/components/Navlist';
+import politics from '@/constants/politics';
 import { Metadata } from "next";
 
 export const metadata : Metadata = {
     title: "ETFS",
   };
-  
-const etfs = () => {
-  return (
-    <div>
-      <Etfs/>
-    </div>
-  )
-}
 
-export default etfs
+const Etfs = () => {
+  return <Navlist pageTitle="ETFS" posts={politics} />;
+};
+
+export default Etfs;

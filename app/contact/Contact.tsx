@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-
+import Outbrain from "@/components/ads/outbrain";
 
 
 interface FormData {
@@ -79,6 +79,13 @@ const Contact: React.FC = () => {
           </p>
         </header>
 
+         <aside className="max-w-7xl mt-30 mx-auto">
+        <div className="OUTBRAIN outbrain-desktop" data-widget-id="AR_2"></div>
+        <div className="OUTBRAIN outbrain-mobile" data-widget-id="CRMB_2"></div>
+      </aside>
+
+      
+
         {/* Main Content */}
         <main className="max-w-5xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10">
           {/* Contact Form */}
@@ -148,6 +155,12 @@ const Contact: React.FC = () => {
         </main>
       </div>
 
+ <aside className="max-w-7xl mt-30 mx-auto">
+        <div className="OUTBRAIN outbrain-desktop" data-widget-id="AR_1"></div>
+        <div className="OUTBRAIN outbrain-mobile" data-widget-id="CRMB_1"></div>
+      </aside>
+
+      <Outbrain />
      
     </>
   );

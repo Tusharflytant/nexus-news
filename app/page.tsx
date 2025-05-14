@@ -3,7 +3,7 @@ import React from 'react'
 import Slider from '../components/Slider'
 //import Blogs from '../components/Blogs'
 import Posts from '../components/Posts'
-
+import Outbrain from '@/components/ads/outbrain'
 import entertainment from '@/constants/entertainment'
 import money from '@/constants/money'
 import politics from '@/constants/politics'
@@ -33,33 +33,11 @@ const page = () => {
 <div className="bg-white">
 <div className="max-w-7xl mx-auto lg:p-4">
 
+   
+
 
 <div className='pt-10'>
-{/* <Link href="/post/The-Art-of-Layering-Mastering-Seasonal-Fashion-with-Essentials">
-<Blogs title = "politics" mainimg='/articles/Blogheraid50.jpg'
- maintitle='POLITICS' maincontent='The Art of Layering: Mastering Seasonal Fashion with Essentials'
-  maindesc='Layering is an essential skill when it comes to mastering seasonal fashion. By combining different pieces thoughtfully, you'
-   author='Samantha Lee'
- days="06 Apr 2025" buttontext='See all' buttoncolor='bg-orange-500' buttonhovercolor='hover:bg-blue-600'/>
- </Link> */}
 
- {/* {politics.slice(0,1).map((post,index) => (
-  <Link key={index} href={`/post/${post.title.replace(/[^A-Za-z0-9]+/g, "-")}`} passHref>
-    <Blogs
-    maincontent={post.title}
-    maindesc= {post.contents[0]}
-    mainimg={`/articles/${post.imgUrl}`}
-    author={post.authorName}
-    days={post.articleNumber}
-    title={post.section}
-    maintitle={post.section}
-    buttontext='see all'
-    buttoncolor='bg-orange-500'
-    buttonhovercolor='hover:bg-blue-600'
-    />
-
-    </Link>
- ))} */}
 
 <div className="flex justify-between mb-4 items-center sm:px-4 lg:px-0 px-6 ">
   <Link href="/etfs"  >
@@ -112,23 +90,7 @@ const page = () => {
 </div>
 
 <div className='mt-10 '>
-{/* {money.slice(0,1).map((post,index) => (
-  <Link key={index} href={`/post/${post.title.replace(/[^A-Za-z0-9]+/g, "-")}`} passHref>
-    <Blogs
-    maincontent={post.title}
-    maindesc= {post.contents[0]}
-    mainimg={`/articles/${post.imgUrl}`}
-    author={post.authorName}
-    days={post.articleNumber}
-    title={post.section}
-    maintitle={post.section}
-    buttontext='see all'
-    buttoncolor='bg-orange-500'
-    buttonhovercolor='hover:bg-blue-600'
-    />
 
-    </Link>
- ))} */}
 
 <div className="flex justify-between p-8 items-center sm:px-4 lg:px-0 px-6 ">
   <Link href="/finance"  >
@@ -182,23 +144,7 @@ const page = () => {
 </div>
 
 <div className='mt-10'>
-{/* {usNews.slice(0,1).map((post,index) => (
-  <Link key={index} href={`/post/${post.title.replace(/[^A-Za-z0-9]+/g, "-")}`} passHref>
-    <Blogs
-    maincontent={post.title}
-    maindesc= {post.contents[0]}
-    mainimg={`/articles/${post.imgUrl}`}
-    author={post.authorName}
-    days={post.articleNumber}
-    title={post.section}
-    maintitle={post.section}
-    buttontext='see all'
-    buttoncolor='bg-orange-500'
-    buttonhovercolor='hover:bg-blue-600'
-    />
 
-    </Link>
- ))} */}
 
 <div className="flex justify-between p-8 items-center sm:px-4 lg:px-0 px-6 ">
   <Link href="/stock"  >
@@ -234,23 +180,7 @@ const page = () => {
 </div>
 
 <div className='mt-10'>
-{/* {entertainment.slice(0,1).map((post,index) => (
-  <Link key={index} href={`/post/${post.title.replace(/[^A-Za-z0-9]+/g, "-")}`} passHref>
-    <Blogs
-    maincontent=""
-    maindesc= ""
-    mainimg=""
-    author=""
-    days=""
-    title={post.section}
-    maintitle={post.section}
-    buttontext='see all'
-    buttoncolor='bg-orange-500'
-    buttonhovercolor='hover:bg-blue-600'
-    />
 
-    </Link>
- ))} */}
 
 <div className="flex justify-between p-8 items-center sm:px-4 lg:px-0 px-6 ">
   <Link href="/trading"  >
@@ -287,7 +217,13 @@ const page = () => {
 </div>
 </div>
 </div>
-<div className='h-20 bg-white'></div>
+
+ <aside className="max-w-7xl mt-30 mx-auto">
+        <div className="OUTBRAIN outbrain-desktop" data-widget-id="AR_1"></div>
+        <div className="OUTBRAIN outbrain-mobile" data-widget-id="CRMB_1"></div>
+      </aside>
+
+      <Outbrain />
 
 
     </div>
